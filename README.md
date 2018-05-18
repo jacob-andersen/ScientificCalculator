@@ -16,23 +16,23 @@ All features must be tested. Tests must include normal behavior, and any possibl
 
 ### Documentation
 
-You must produce UML diagrams for your program. All classes (excluding test classes) must be included in the UML class diagrams.
+You must produce UML diagrams for your program. All classes (excluding test classes) must be included in the UML class diagrams. Your UML must be approved by an instructure by 5PM on Friday.
 
-### Core Features 
+### Core Features
 
 All calculators should have the following features:
 
-- A state, representing the value currently displayed on the calculator (default 0) *
-- Get the current number on the display *
-- Clear the display *
-- Change the number on the display *
+- A state, representing the value currently displayed on the calculator (default 0)
+- Get the current number on the display
+- Clear the display
+- Change the number on the display
 - Add, subtract, multiply, and divide the value on the display by a given number
-- Calculate the square (x<sup>2</sup>) and square root (√x) of the number on the display *
+- Calculate the square (x<sup>2</sup>) and square root (√x) of the number on the display
 - Calculate variable exponentiation (x<sup>y</sup>)
-- Calculate the inverse of the number on the display (1/x) *
+- Calculate the inverse of the number on the display (1/x)
 - Invert the sign of the number on the display (switch between positive and negative)
-- Update the display to `Err` if an error occurs (eg: Division by zero) *
-- Errors must be cleared before any other operation can take place *
+- Update the display to `Err` if an error occurs (eg: Division by zero)
+- Errors must be cleared before any other operation can take place
 
 Each operation should automatically update the display
 
@@ -56,12 +56,15 @@ Each operation should automatically update the display
 - Switch trig units mode (Degrees, Radians)
   - `switchUnitsMode()` should rotate through the options
   - `switchUnitsMode(String mode)` should set the trig units to the type given
+
+### Bonus
+- Factorial function  
 - Logarithmic functions
   - Log
   - 10<sup>x</sup> (inverse logarithm)
   - Ln (natural logarithm)
   - e<sup>x</sup> (inverse natural logarithm)
-- Factorial function  
+
 
 
 ### Custom Features
@@ -86,4 +89,4 @@ The following functions should take the displayed value (x) and updated it accor
 
 ## Submission
 
-Completed projects should be submitted by submitting a pull request against the [original repository](https://github.com/Zipcoder/project-1-calculator). All work should be done in your own repository.
+Completed projects should be submitted by submitting a pull request against the [original repository](https://git.zipcode.rocks/ZipCodeWilmington/ZCW-MacroLabs-OOP-ScientificCalculator). All work should be done in your own repository.
