@@ -16,7 +16,7 @@ All features must be tested. Tests must include normal behavior, and any possibl
 
 ### Documentation
 
-You must produce UML diagrams for your program. All classes (excluding test classes) must be included in the UML class diagrams. Your UML must be approved by an instructure by 5PM on Friday.
+You must produce UML diagrams for your program. All classes (excluding test classes) must be included in the UML class diagrams. Your UML must be approved by an instructor by 5PM on Friday.
 
 ### Core Features
 
