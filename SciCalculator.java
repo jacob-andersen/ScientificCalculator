@@ -9,9 +9,13 @@ public class SciCalculator{
 
     boolean isOn = true;
     int choice;
+    double displayNumber = 0;
 
     while(isOn){
         //display prompt
+      System.out.println("-----------------");
+      System.out.println(displayNumber);
+      System.out.println("-----------------");
       System.out.println("Please choose a function (enter # 1-4)");
       System.out.println("(1) Change units");
       System.out.println("(2) Change number system");
