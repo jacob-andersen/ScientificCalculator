@@ -32,7 +32,9 @@ public class SciCalculator{
                 break;
         case 2:System.out.println("call number system function");//call number system function
                 break;
-        case 3:System.out.println("call memory function");//call memory function
+        case 3: Memory memNumber = new Memory();
+                memNumber.setMemNum(6);
+                System.out.print(memNumber.getMemNum());
                 break;
         case 4:System.out.println("call operations function");//call operations function
                 break;
@@ -40,6 +42,8 @@ public class SciCalculator{
                 break;
         case 6:System.out.println("Goodbye");//clear display
                 isOn = false;
+                break;
+        default:
                 break;
       }
     }
