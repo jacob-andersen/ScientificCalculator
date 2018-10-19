@@ -11,7 +11,7 @@ public class Memory{
   }
   public void setMemNum(){
     System.out.println("Enter number to store to memory");
-    num = stdin.nextDouble();
+    double num = stdin.nextDouble();
     memNum = num;
   }
 }
