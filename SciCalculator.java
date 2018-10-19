@@ -33,8 +33,8 @@ public class SciCalculator{
         case 2:System.out.println("call number system function");//call number system function
                 break;
         case 3: Memory memNumber = new Memory();
-                memNumber.setMemNum(6);
-                System.out.print(memNumber.getMemNum());
+                memNumber.setMemNum();
+                System.out.println(memNumber.getMemNum());
                 break;
         case 4:System.out.println("call operations function");//call operations function
                 break;
