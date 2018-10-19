@@ -16,7 +16,7 @@ public class SciCalculator{
       System.out.println("-----------------");
       System.out.println(displayNumber);
       System.out.println("-----------------");
-      System.out.println("Please choose a function (enter # 1-4)");
+      System.out.println("Please choose a function (enter # 1-6)");
       System.out.println("(1) Change units");
       System.out.println("(2) Change number system");
       System.out.println("(3) Access memory functions (M+, MC, MRC)");
