@@ -13,17 +13,19 @@ public class SciCalculator{
 
     while(isOn){
         //display prompt
-      System.out.println("-----------------");
+      System.out.println("******************************************");
       System.out.println(displayNumber);
-      System.out.println("-----------------");
+      System.out.println("******************************************");
+      System.out.println("==========================================");
       System.out.println("Please choose a function (enter # 1-6)");
       System.out.println("(1) Change units");
       System.out.println("(2) Change number system");
       System.out.println("(3) Access memory functions (M+, MC, MRC)");
       System.out.println("(4) Execute calculation");
       System.out.println("(5) Clear display");
-      System.out.println("-----------------");
+      System.out.println("------------------------------------------");
       System.out.println("(6)Quit program");
+      System.out.println("==========================================");
 
       choice = stdin.nextInt();
 
@@ -36,7 +38,8 @@ public class SciCalculator{
                 memNumber.setMemNum();
                 System.out.println(memNumber.getMemNum());
                 break;
-        case 4:System.out.println("call operations function");//call operations function
+        case 4: Operations op = new Operations();
+                displayNumber = op.chooseOp(displayNumber);//call operations function
                 break;
         case 5:System.out.println("clear display");//clear display
                 break;
