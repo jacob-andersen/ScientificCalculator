@@ -1,18 +1,22 @@
 import java.util.Scanner;
 import java.lang.*;
 
-public class displayVal{
+public class DisplayVal{
 
-  Scanner stdin = new Scanner(System.in);
-  private double displayValue = 0;
+  private double value = 0;
 
-  public double getMemNum(){
-     return this.memNum;
+  //Scanner stdin = new Scanner(System.in);
+
+  public double getValue(){
+     return this.value;
   }
-  public void setMemNum(){
-    System.out.println("Enter number to store to memory");
-    System.out.print("> ");
-    double num = stdin.nextDouble();
-    this.memNum = num;
+  public void setValue(double num){
+    this.value = num;
+  }
+
+  public String valToString(double num){
+    String displayStr = new String();
+    displayStr += "" + num;
+    return displayStr;
   }
 }

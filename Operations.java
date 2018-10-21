@@ -5,15 +5,16 @@ public class Operations{
 
   Scanner stdin = new Scanner(System.in);
 
-
 public double chooseOp(double num){
 
   boolean isValid = false;
   int choice;
-  double result = -1;
+  double result = 0;
 
   while(!isValid){
     System.out.println("\n-------------------------------------------------");
+    System.out.println(num);
+    System.out.println("-------------------------------------------------");
     System.out.println("Select type of operation to perform (enter # 1-3)");
     System.out.println("(1) Core Functions");
     System.out.println("(2) Trigonometry");
@@ -47,7 +48,9 @@ public double coreFunc(double num){ //take displayNum as input parameter
 
 
   while(!isValid){
-    System.out.println("\n---------------------------------------------");
+    System.out.println("\n-------------------------------------------------");
+    System.out.println(num);
+    System.out.println("-------------------------------------------------");
     System.out.println("Select core function to perform (enter # 1-9)");
     System.out.println("(1) Add");
     System.out.println("(2) Subtract");
@@ -64,43 +67,52 @@ public double coreFunc(double num){ //take displayNum as input parameter
 
     switch(choice){
       case 1: System.out.println("Enter number to add to " + num + ": ");
+              System.out.print("> ");
               entNum = stdin.nextDouble();
               result = num + entNum;
               isValid = true;
             break;
       case 2: System.out.println("Enter number to subtract from " + num + ": ");
+              System.out.print("> ");
               entNum = stdin.nextDouble();
               result = num - entNum;
               isValid = true;
             break;
       case 3: System.out.println("Enter number to multiply to " + num + ": ");
+              System.out.print("> ");
               entNum = stdin.nextDouble();
               result = num * entNum;
               isValid = true;
             break;
       case 4: System.out.println("Enter number to divide from " + num + ": ");
+              System.out.print("> ");
               entNum = stdin.nextDouble();
               result = num / entNum; //use Double.isNaN(x)
               isValid = true;
             break;
       case 5: System.out.println("Squaring number on display (" + num + "^2) ");
+              System.out.print("> ");
               result = num * num;
               isValid = true;
             break;
       case 6: System.out.println("Taking square root of " + num);//cant take negative #
+              System.out.print("> ");
               result = Math.sqrt(num);
               isValid = true;
             break;
       case 7: System.out.println("Enter exponent to raise " + num + " to (" + num + "^n)");
+              System.out.print("> ");
               entNum = stdin.nextDouble();
               result = num * entNum;
               isValid = true;
             break;
       case 8: System.out.println("Calculating inverse of " + num + " (1/" + num + ")");
+              System.out.print("> ");
               result = 1/num;
               isValid = true;
             break;
       case 9: System.out.println("Calculating negation of  " + num + " (n -> -n , -n -> n)");
+              System.out.print("> ");
               result = num * -1;
               isValid = true;
             break;
@@ -119,7 +131,9 @@ public double trigFunc(double num){ //take displayNum as input parameter
   double result = -0;
 
   while(!isValid){
-    System.out.println("\n--------------------------------------------");
+    System.out.println("\n-------------------------------------------------");
+    System.out.println(num);
+    System.out.println("-------------------------------------------------");
     System.out.println("Select trigonemtric function (enter # 1-6)");
     System.out.println("(1) Sin");
     System.out.println("(2) Cos");
@@ -170,6 +184,8 @@ public double advFunc(double num){ //take displayNum as input parameter
 
   while(!isValid){
     System.out.println("\n-------------------------------------------------");
+    System.out.println(num);
+    System.out.println("-------------------------------------------------");
     System.out.println("Select advanced function to perform (enter # 1-7)");
     System.out.println("(1) Factorial");
     System.out.println("(2) Log");
