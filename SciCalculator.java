@@ -13,9 +13,10 @@ public class SciCalculator{
 
     while(isOn){
         //display prompt
-      System.out.println("******************************************");
+      System.out.println("\n******************************************");
+      System.out.println(String.format("%"+32+"s", "Scientific Calculator"));
+      System.out.println("------------------------------------------");
       System.out.println(displayNumber);
-      System.out.println("******************************************");
       System.out.println("==========================================");
       System.out.println("Please choose a function (enter # 1-6)");
       System.out.println("(1) Change units");
@@ -25,7 +26,8 @@ public class SciCalculator{
       System.out.println("(5) Clear display");
       System.out.println("------------------------------------------");
       System.out.println("(6)Quit program");
-      System.out.println("==========================================");
+      System.out.println("******************************************");
+      System.out.print("> ");
 
       choice = stdin.nextInt();
 
