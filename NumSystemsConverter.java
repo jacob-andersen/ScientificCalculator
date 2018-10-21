@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class NumSystemsConverter here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class NumSystemsConverter
 {
  // Decimal to binary converter
@@ -34,8 +27,7 @@ private String fractionalToBinary(double num, int precision) {
 }
 
 // display mode is sent along with displayNumber, could also be defined globally)
-
-public class String updateDisplayNumber(double displayNumber,int mode){
+public String updateDisplayNumber(double displayNumber,int mode){
   String str="";
 switch(mode) {
   case 1:{
@@ -62,3 +54,5 @@ switch(mode) {
   return str;
 }
 }
+
+
