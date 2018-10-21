@@ -1,10 +1,10 @@
 import java.util.Scanner;
 import java.lang.*;
 
-public class Memory{
+public class displayVal{
 
   Scanner stdin = new Scanner(System.in);
-  private double memNum = 0;
+  private double displayValue = 0;
 
   public double getMemNum(){
      return this.memNum;

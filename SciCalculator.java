@@ -11,6 +11,8 @@ public class SciCalculator{
     int choice;
     double displayNumber = 0;
 
+    Memory memNumber = new Memory();
+
     while(isOn){
         //display prompt
       System.out.println("\n******************************************");
@@ -36,9 +38,20 @@ public class SciCalculator{
                 break;
         case 2:System.out.println("call number system function");//call number system function
                 break;
-        case 3: Memory memNumber = new Memory();
-                memNumber.setMemNum();
-                System.out.println(memNumber.getMemNum());
+        case 3: System.out.println("------------------------------------------");
+                System.out.println("Choose memory function (enter 1 or 2)");
+                System.out.println("(1) Recall value in memory");
+                System.out.println("(2) Update value in memory");
+                System.out.println("------------------------------------------");
+                System.out.print("> ");
+                int mem = stdin.nextInt();
+                if(mem == 1)
+                  displayNumber = memNumber.getMemNum();
+                else if(mem == 2)
+                  memNumber.setMemNum();
+                else{
+                  System.out.println("Value in memory is: " + memNumber.getMemNum());
+                }
                 break;
         case 4: Operations op = new Operations();
                 displayNumber = op.chooseOp(displayNumber);//call operations function
