@@ -8,6 +8,8 @@ public class DisplayVal{
   private String disVal = "0";
   Scanner stdin = new Scanner(System.in);
 
+  NumSystemsConverter conv = new NumSystemsConverter();
+
 
   //Scanner stdin = new Scanner(System.in);
 
@@ -41,6 +43,7 @@ public class DisplayVal{
               this.numSys = "Hexadecimal";
             break;
   }
+  this.setDisVal(conv.updateDisplayNumber(this.value,num)); //not working
 }
 
 public void toggleNumSys(){
@@ -60,6 +63,10 @@ public void toggleNumSys(){
 
 public String getNumSys(){
   return this.numSys;
+}
+
+public void setDisVal(String value){
+  this.disVal = value;
 }
 
 

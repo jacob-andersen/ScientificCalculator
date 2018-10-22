@@ -12,6 +12,7 @@ public class SciCalculator{
 
     Memory memNumber = new Memory();
     DisplayVal val = new DisplayVal();
+    Units unit = new Units();
 
     while(isOn){
         //display prompt
@@ -27,7 +28,7 @@ public class SciCalculator{
       System.out.println("(2) Execute calculation");
       System.out.println("(3) Access memory functions (M+, MC, MRC)");
       System.out.println("(4) Change number system "); //may link to class
-      System.out.println("(5) Change units (maybe)"); //may link to class
+      System.out.println("(5) Change units"); //may link to class
       System.out.println("(6) Clear display");
       System.out.println("------------------------------------------");
       System.out.println("(7)Quit program");
@@ -80,7 +81,7 @@ public class SciCalculator{
                 }
               break;
         case 5:
-                System.out.println("units func");;//clear display
+                val.setValue(unit.choice(val.getValue()));//clear display
               break;
         case 6:
                 val.setValue(0.0);
