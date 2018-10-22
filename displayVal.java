@@ -43,11 +43,26 @@ public class DisplayVal{
   }
 }
 
+public void toggleNumSys(){
+  if(this.numSys == "Decimal"){
+    this.numSys = "Binary";
+  } else if(this.numSys == "Binary"){
+    this.numSys = "Octal";
+  } else if(this.numSys == "Octal"){
+    this.numSys = "Hexadecimal";
+  } else if(this.numSys == "Hexadecimal"){
+    this.numSys = "Decimal";
+  } else {
+    this.numSys = "Decimal";
+  }
+
+}
+
 public String getNumSys(){
   return this.numSys;
 }
 
-  
+
   public String valToString(double num){
     String displayStr = new String();
     displayStr += "" + num;

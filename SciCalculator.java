@@ -37,15 +37,18 @@ public class SciCalculator{
       choice = stdin.nextInt();
 
       switch(choice){
-        case 1: System.out.println("Enter the value you want to input to calculator:");//call change units function
+        case 1:
+                System.out.println("Enter the value you want to input to calculator:");//call change units function
                 System.out.print("> ");
                 double inVal = stdin.nextDouble();
                 val.setValue(inVal);
               break;
-        case 2: Operations op = new Operations();
+        case 2:
+                Operations op = new Operations();
                 val.setValue(op.chooseOp(val.getValue()));//call operations function
               break;
-        case 3: System.out.println("\n------------------------------------------");
+        case 3:
+                System.out.println("\n------------------------------------------");
                 System.out.println("Choose memory function (enter 1 or 2)");
                 System.out.println("(1) Recall value in memory");
                 System.out.println("(2) Update value in memory");
@@ -62,13 +65,28 @@ public class SciCalculator{
                   System.out.println("Value in memory is: " + memNumber.getMemNum());
                 }
                 break;
-        case 4: val.setNumSys();//clear display
+        case 4:
+                System.out.println("\n------------------------------------------");
+                System.out.println("Select number system option (enter 1 or 2)");
+                System.out.println("(1) Toggle Number System");
+                System.out.println("(2) Choose Number System");
+                System.out.println("------------------------------------------");
+                System.out.print("> ");
+                int select = stdin.nextInt();
+                if(select == 1){
+                  val.toggleNumSys();
+                } else{
+                  val.setNumSys();
+                }
               break;
-        case 5: System.out.println("units func");;//clear display
+        case 5:
+                System.out.println("units func");;//clear display
               break;
-        case 6: System.out.println("clear display function");
+        case 6:
+                System.out.println("clear display function");
               break;
-        case 7:System.out.println("Goodbye");//clear display
+        case 7:
+                System.out.println("Goodbye");//clear display
                 isOn = false;
               break;
         default:
