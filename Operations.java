@@ -103,7 +103,7 @@ public double coreFunc(double num){ //take displayNum as input parameter
       case 7: System.out.println("Enter exponent to raise " + num + " to (" + num + "^n)");
               System.out.print("> ");
               entNum = stdin.nextDouble();
-              result = num * entNum;
+              result = Math.pow(num, entNum);
               isValid = true;
             break;
       case 8: System.out.println("Calculating inverse of " + num + " (1/" + num + ")");
@@ -202,7 +202,7 @@ public double advFunc(double num){ //take displayNum as input parameter
       case 1: System.out.println("Calculating factorial of " + num);
               int i;
               double fct = 1;
-              for(i=2; i<num; i++){
+              for(i=1; i<=num; i++){
                 fct *= i;
               }
               result = fct;

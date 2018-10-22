@@ -18,13 +18,15 @@ public class SciCalculator{
       System.out.println("\n******************************************");
       System.out.println(String.format("%"+30+"s", "Scientific Calculator"));
       System.out.println("------------------------------------------");
+      System.out.println("Number System: " + val.getNumSys());
+      System.out.println("------------------------------------------");
       System.out.println(val.valToString(val.getValue()));
       System.out.println("==========================================");
       System.out.println("Please choose a function (enter # 1-6)");
       System.out.println("(1) Input value to calculator");
       System.out.println("(2) Execute calculation");
       System.out.println("(3) Access memory functions (M+, MC, MRC)");
-      System.out.println("(4) Change number system (maybe)"); //may link to class
+      System.out.println("(4) Change number system "); //may link to class
       System.out.println("(5) Change units (maybe)"); //may link to class
       System.out.println("(6) Clear display");
       System.out.println("------------------------------------------");
@@ -60,9 +62,9 @@ public class SciCalculator{
                   System.out.println("Value in memory is: " + memNumber.getMemNum());
                 }
                 break;
-        case 4: System.out.println("maybe number systems func");//clear display
+        case 4: val.setNumSys();//clear display
               break;
-        case 5: System.out.println("change units function (maybe)");//clear display
+        case 5: System.out.println("units func");;//clear display
               break;
         case 6: System.out.println("clear display function");
               break;
