@@ -83,7 +83,7 @@ public class SciCalculator{
                 System.out.println("units func");;//clear display
               break;
         case 6:
-                System.out.println("clear display function");
+                val.setValue(0.0);
               break;
         case 7:
                 System.out.println("Goodbye");//clear display
