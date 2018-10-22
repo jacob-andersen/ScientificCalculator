@@ -5,7 +5,9 @@ public class DisplayVal{
 
   private double value = 0;
   private String numSys = "Decimal";
+  private String disVal = "0";
   Scanner stdin = new Scanner(System.in);
+
 
   //Scanner stdin = new Scanner(System.in);
 
@@ -45,6 +47,7 @@ public String getNumSys(){
   return this.numSys;
 }
 
+  
   public String valToString(double num){
     String displayStr = new String();
     displayStr += "" + num;
